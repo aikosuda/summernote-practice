@@ -18,3 +18,26 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+$.summernote.options.lang = "ja-JP";
+
+document.addEventListener("turbolinks:load", function() {
+
+
+$(function() {
+  $('.menu-trigger').on('click', function(event) {
+    $(this).toggleClass('active');
+    $('.nav-wrap').fadeToggle();
+    event.preventDefault();
+  });
+});
+
+$(function() {
+  $('.tag-trigger').on('click', function(event) {
+    $(this).toggleClass('active');
+    $('.all-tags').fadeToggle();
+    event.preventDefault();
+  });
+});
+
+})
