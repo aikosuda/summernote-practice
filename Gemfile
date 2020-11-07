@@ -62,32 +62,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
-
-gem "jquery-rails"
-
+gem 'kaminari', '~> 1.2.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
-
-gem 'ancestry'
-
-gem 'ransack'
-
-gem 'pry-byebug'
-
+gem 'refile', require: "refile/rails", github: 'manfe/refile'
+gem 'refile-mini_magick'
+gem 'font-awesome-sass', '~> 5.4.1'
+gem 'dotenv-rails'
 gem 'rubocop-airbnb'
-
+gem 'chart-js-rails', '~> 0.1.4'
 gem 'summernote-rails', '~> 0.8.10.0'
-
-gem 'font-awesome-rails'
-
-gem 'rails-i18n'
-
-gem 'kaminari','~> 1.2.1'
-
-gem "refile", require: "refile/rails", github: 'manfe/refile'
-gem "refile-mini_magick"
-
-gem 'devise-i18n'
-gem 'devise-i18n-views'
-gem 'whenever', require: false
-gem 'react-rails'
